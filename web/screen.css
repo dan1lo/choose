@@ -1,0 +1,313 @@
+/* 
+    Document   : screen
+    Created on : 09/07/2012, 22:27:40
+    Author     : saturnino
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+/* v2.0 | 20110126
+
+http://meyerweb.com/eric/tools/css/reset/
+
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body,html{
+	padding: 0;
+	margin:0 ;
+	background: url("imagens/fundo1.png") repeat ;
+	}
+.div{ border: 1px  solid black;}
+        
+#container{
+        
+	margin: 0 auto;
+	background-color:#E2E2E2;
+        width:1100px;
+       
+}
+
+#header{
+	 
+   	height: 85px;
+	background: url("imagens/logo_choosecar.png") no-repeat ;
+	background-color:#fff;
+	background-position: 5px 5px;	
+	border-top-color: #990000;
+	border-bottom-width: 8px;
+	border-bottom-style: solid;
+        border-bottom-color: #666666;
+}
+
+#menutop  a {
+        color:#AE0701;
+        text-decoration: none;
+}
+
+#menutop  a:hover {
+        color:#AE0701;
+        text-decoration: underline;
+}
+
+#menutop{
+	width:400px;
+	position: relative;
+	top: 63px;
+	left:690px;
+	margin:0px;
+	text-align:right;
+	font-family:verdana,arial,sans-serif;
+	font-size: 0.9em;
+	
+}
+
+ul li{
+        display: inline;  
+}
+
+#menus{
+        background:  url(imagens/tweet.png) 900px 3px  no-repeat, url(imagens/facebook.png) 1000px 3px   no-repeat;
+        height:30px;
+        background-color:#CCCCCC;
+}
+
+#central{
+        height:570px;
+        background: url("imagens/fundo.png");
+        position: relative;
+        top:0px;
+        z-index:1;
+ }
+ 
+#sombra{
+        width: 1000px;
+        height:615px;
+        background: url("imagens/sombra.png") no-repeat;
+        position: absolute;
+        top:7px;
+        left:63px;
+        z-index:2;
+}
+ 
+ #conteudo{
+	margin: 0 auto;
+	width: 980px;
+	height: 600px; 
+	background:#fff;
+	position: relative;
+        top:0px;
+  	z-index:3;
+}
+
+#cadastroform {
+        width: 550px;
+        padding: 10px;
+        background: #f0f0f0;
+        overflow:auto;
+        position: relative;
+        top:-250px;
+        left:350px;
+           
+        /* Border style */
+        border: 1px solid #cccccc;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        border-radius: 7px; 
+ 
+        /* Border Shadow */
+        -moz-box-shadow: 2px 2px 2px #cccccc;
+        -webkit-box-shadow: 2px 2px 2px #cccccc;
+        box-shadow: 2px 2px 2px #cccccc;
+}
+	
+legend {
+        font-family: Arial, Verdana;
+        text-shadow: 2px 2px 2px #ccc;
+        display: block;
+        float: left; margin-right:15px;
+        font-weight: bold;
+        #margin-right:20px;
+        text-align: left;
+        width: 180px;
+        line-height: 15px;
+        font-size: 20px;
+}
+          
+label {
+        font-family: Arial, Verdana;
+        text-shadow: 2px 2px 2px #ccc;
+        display: block;
+        float: left; margin-right:15px;
+        margin-right:40px;
+        text-align: right;
+        width: 70px;
+        line-height: 15px;
+        font-size: 22px;
+ }	
+ 
+input{
+        font-family: Arial, Verdana;
+        font-size: 22px;
+        padding: 5px;
+        border: 1px solid #b9bdc1;
+        width: 350px;
+        color: #797979;
+        1line-height: 15px;
+}
+	
+.hint{
+        display:none;
+}	
+
+.field:hover .hint {
+        position: absolute;
+        display: block;
+        margin: -30px 0 0 455px;
+        color: #FFFFFF;
+        padding: 1px 50px;
+        background: rgba(0, 0, 0, 0.6);
+ 
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        border-radius: 7px;
+}
+
+.button{
+        float: right; margin-left:15px;
+        margin:10px 55px 10px 0;
+        font-weight: bold;
+        line-height: 1;
+        padding: 6px 10px;
+        cursor:pointer;
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 -1px 1px #64799e;
+ 
+    /* Background gradient */
+    
+	background:#B30306;
+        background: -moz-linear-gradient
+       (top, #a5b8da 0%, #7089b3 100%);
+        background: -webkit-gradient
+        (linear, 0% 0%, 0% 100%,
+         from(#a5b8da), to(#7089b3));
+ 
+     /* Border style */
+        border: 1px solid #5c6f91;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+ 
+        /* Box shadow */
+        -moz-box-shadow: inset 0 1px 0 0 #aec3e5;
+        -webkit-box-shadow: inset 0 1px 0 0 #aec3e5;
+        box-shadow: inset 0 1px 0 0 #aec3e5;
+}
+
+#porsch{
+        position: relative;
+        top:180px;
+        left:20px;
+}
+
+#footer{
+        background: url(imagens/footer.png) ;
+        background-color: #999999;
+        height:200px;
+        font-family: verdana,arial,sans-serif;
+        font-size: 0.7em;
+        color: #fff;
+        position: relative;
+        z-index:0;
+}
+
+img#mini_logo{
+        position:relative;
+        top:160px;
+        left:900px;
+}
+
+#rodape{	
+	
+	font-family: verdana,arial,sans-serif;
+	font-size: 0.7em;
+	color: white;
+	background-color: #666666;
+	padding:10px 0px 10px 50px;
+}
+
+#logon_0{
+    margin-top:5px;
+    width:150px;
+    color:black;
+}
+#logon_0:hover{
+    background:black;
+    color:white;
+    
+}
+
+
+#frase{
+    position: relative;
+    top:-500px;
+    left:85px;
+    width:300px;
+    font-family: Arial, Verdana;
+    text-shadow: 2px 2px 2px #ccc;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    color:#AE0701;
+    z-index:4;
+    
+}
