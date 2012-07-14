@@ -6,5 +6,9 @@
     <include file="example.xml"/>
     <!-- Configuration for the default package. -->
     <package name="default" extends="struts-default">
+        <action name="cadastroUser" class="action.CadastrarUserAction" method="cadastrarUser" >
+         <result name="sucessoCadastroUser">userCadastrado.jsp</result>
+         <result name="erroCadastroUser">problemasCadastro.jsp</result>
+        </action>
     </package>
 </struts>

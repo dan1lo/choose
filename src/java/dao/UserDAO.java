@@ -6,6 +6,7 @@ package dao;
 
 import model.User;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 /**
  *
@@ -14,17 +15,19 @@ import org.hibernate.Session;
 public class UserDAO {
     Session sessao = HibernateUtil.getSessionFactory().getCurrentSession(); //pega a sessao e cria a conexão
     
-    public void CadastrarUser(User usuario){
+    public boolean CadastrarUser(User usuario){
         
         try{
-            
-           sessao.save(usuario);
-           sessao.beginTransaction().commit();
+           Transaction t = sessao.beginTransaction();   
+           sessao.saveOrUpdate(usuario);
+           t.commit();
            sessao.close();
-            
+            return true;
         }catch(Exception e)
         {
-            System.out.println(e);
+            System.out.println(e.getMessage());
+            sessao.close();
+            return false;
         }
     }
     
