@@ -16,28 +16,22 @@ import model.User;
 public class CadastrarUserAction extends ActionSupport implements ModelDriven<User> {
     User user = new User();
     UserDAO userDAO = new UserDAO();
-    private  String nome;
     private String password;
     private String usuario;
-    private String email;
-    private boolean retorno;
-    
+    private String nomeCompleto;
+    private String mail;
+   
+
     public String cadastrarUser(){
         try{
                         
-            user.setEmail(this.getEmail());
-            user.setNome(this.getNome());
-            user.setSenha(this.getPassword());
-            user.setUser(this.getUsuario());
+            user.setEmail(mail);
+            user.setNome(nomeCompleto);
+            user.setSenha(password);
+            user.setUser(usuario);     
+            userDAO.CadastrarUser(user);
+            return "sucessoCadastroUser";
             
-            retorno = userDAO.CadastrarUser(user);
-           
-            return "sucessoCadastroUser";
-            /* if (retorno){
-            return "sucessoCadastroUser";
-            }else{
-              return "erroCadastroUser";  
-            } */
         }catch(Exception e){
                        
             System.out.print(e);
@@ -46,21 +40,28 @@ public class CadastrarUserAction extends ActionSupport implements ModelDriven<Us
         
        }
     
-    public String getEmail() {
-        return email;
+
+      public String getMail() {
+        return mail;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeCompleto() {
+        return nomeCompleto;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeCompleto(String nomeCompleto) {
+        this.nomeCompleto = nomeCompleto;
+    }  
+    
+    @Override
+    public User getModel() {
+       return user;
     }
+
 
     public String getPassword() {
         return password;
@@ -76,12 +77,6 @@ public class CadastrarUserAction extends ActionSupport implements ModelDriven<Us
 
     public void setUsuario(String usuario) {
         this.usuario = usuario;
-    }
-    
-    
-    @Override
-    public User getModel() {
-       return user;
     }
     
     
