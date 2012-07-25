@@ -1,10 +1,10 @@
 <%@taglib uri="/struts-tags" prefix="s"%><br/>
 <div id="cadastroform" >
-                    <s:form action="logon" method="post">
+                    <s:form action="logarUser" method="post">
                   <legend>Login</legend>  <br/>
                 
-                <s:textfield label="Usuário" name="" /><br/>
-                <s:password label="Password" name="" />
+                <s:textfield label="Usuário" name="usuario" value="usuário" /><br />
+                <s:password label="Password" name="password" value="nome" />
                 <s:submit label="Login" value="Login"  />
                 
                 </s:form>

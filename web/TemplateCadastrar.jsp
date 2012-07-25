@@ -21,9 +21,9 @@
 		<ul id="menutop">
                     <li><a title="Home" href="index.jsp">Home</a></li> 
 		    <li>|</li>
-                    <li><a title="Login" href="cadastrar.jsp">Login</a></li> 
+                    <li><a title="Login" href="TemplateCadastrar.jsp">Login</a></li> 
 		    <li>|</li>
-		    <li><a title="Cadastrar" href="cadastrar.jsp">Cadastrar</a></li>
+		    <li><a title="Cadastrar" href="TemplateCadastrar.jsp">Cadastrar</a></li>
 		</ul>
 	</div>  
     <div id="menus"> </div>
