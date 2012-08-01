@@ -5,4 +5,6 @@
   <table-filter match-name="carro"/>
   <table-filter match-name="comentario"/>
   <table-filter match-name="user"/>
+  <table-filter match-name="modelo"/>
+  <table-filter match-name="marca"/>
 </hibernate-reverse-engineering>

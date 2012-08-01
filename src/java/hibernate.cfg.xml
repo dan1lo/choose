@@ -10,5 +10,11 @@
     <mapping resource="model/Carro.hbm.xml"/>
     <mapping resource="model/User.hbm.xml"/>
     <mapping resource="model/Comentario.hbm.xml"/>
+    <mapping resource="hibernate.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="model/Modelo.hbm.xml"/>
+    <mapping resource="model/Marca.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

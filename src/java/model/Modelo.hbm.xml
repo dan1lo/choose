@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 31/07/2012 21:46:16 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="model.Modelo" table="modelo" catalog="choosecar">
+        <id name="idModelo" type="java.lang.Integer">
+            <column name="id_modelo" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="marca" class="model.Marca" fetch="select">
+            <column name="id_marca" not-null="true" />
+        </many-to-one>
+        <property name="nome" type="int">
+            <column name="nome" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

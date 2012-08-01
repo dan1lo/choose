@@ -74,7 +74,7 @@ public class ControllerUserAction extends ActionSupport implements ModelDriven<U
         this.nomeCompleto = nomeCompleto;
     }  
     
-    @Override
+  //  @Override
     public User getModel() {
        return user;
     }
